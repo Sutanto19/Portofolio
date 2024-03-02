@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Style via JS-->
+    <script src="textscript.js"></script>
+
+
+   
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portofolio</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <img src="menu.png" id="menu-icon"></img>
+            <img src="close.png" id="close-icon"></img>
+        </label>
+
+        <nav class="navbar">
+            <a href="#home"> Home</a>
+            <a href="#skills"> Skills</a>
+            <a href="#"> Projects</a>
+        </nav>
+    </header>
+
+     <!--====HOME====-->
+     <!--====HOME====-->
+     <!--====HOME====-->
+     <!--====HOME====-->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="text-content">
+                <h1>Hello, I'm Sutanto</h1>
+                <span class="text"></span>
+            </div>
+            <div class="pic">
+                <div class="picture"></div>
+            </div>
+
+            <div class="panel" id="hirePanel">
+                <div class="contact-container">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-mid">
+                        <div class="contact-mid-title">
+                            <h2>Get in touch</h2>
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="adcddd6e-ea1a-4c9a-a8fc-d3b2d661644c">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit</button>
+                        <div class="closepanel" id="closepanel"></div>
+                        
+                    </form>
+                </div>
+            </div>
+
+            <div class="home-sci">
+                <a href="#" class="btn-box" id="hireBtn">Hire Me</a>
+            </div>
+            <div class="home-cv">
+                <a href="CV Sutanto.pdf" class="btn-box2" id="downloadBtn" download='CV Sutanto'>Download CV</a>
+            </div>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+        
+
+    </section>
+
+
+    <!--====SKILLS====-->
+    <!--====SKILLS====-->
+    <!--====SKILLS====-->
+    <!--====SKILLS====-->
+
+    <section class="skills" id="skills">
+
+        <h3 class="skills-list">Skills</h3>
+
+        <!--Slide Skills-->
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <!--Card 1-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="html.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">HTML</h2>
+                        </div>
+                    </div>
+
+                     <!--Card 2-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="css.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">CSS</h2>
+                        </div>
+                    </div>
+
+                     <!--Card 3-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="js.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">JS</h2>
+                        </div>
+                    </div>
+
+                     <!--Card 4-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="csharp.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">C#</h2>
+                        </div>
+                    </div>
+
+                     <!--Card 5-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="c++.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">C++</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+</body>
+
+
+<!--Swiper JS-->
+<script src="swiper-bundle.min.js"></script>
+
+<!--JS-->
+<script src="script.js"></script>
+
+</html>
