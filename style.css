@@ -438,6 +438,77 @@ header {
 .swiper-button-next{
     right: 0;
 }
+
+/*----=======Projects======------ */
+/*----=======Projects======------ */
+/*----=======Projects======------ */
+/*----=======Projects======------ */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-list {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    margin: 50px;
+    padding-top: 100px;
+    border-bottom: 1.5px solid #fff;
+}
+
+.projects-container{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 2px;
+
+}
+
+.projects-container a {
+    text-decoration: none;
+}
+
+.projects-box{
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+.projects-box1{
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+.projects-box2{
+    padding: 20px;
+}
+
+.title{
+  border: 1px solid cyan;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  padding: 10px;
+  font-weight: normal;
+  border-radius: 5px;
+  background: #0ef;
+  color: black;
+}
+
+.title:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.list{
+    margin-top: 50px;
+    width: 100vh;
+    border: 1px solid white;
+}
+
+
 /*----=======MEDIA MOBILE======------ */
 /*----=======MEDIA MOBILE======------ */
 /*----=======MEDIA MOBILE======------ */
@@ -542,6 +613,12 @@ header {
         width: 150px;
         font-size: medium;
         text-align: center;
+    }
+
+    .btn-box:hover {
+        box-shadow: 0 0 2px cyan,
+            0 0 4px cyan, 0 0 8px cyan,
+            0 0 16px cyan, 0 0 32px cyan
     }
 
     .home-cv{
@@ -801,6 +878,12 @@ header {
         text-align: center;
     }
 
+    .btn-box:hover {
+        box-shadow: 0 0 2px cyan,
+            0 0 4px cyan, 0 0 8px cyan,
+            0 0 16px cyan, 0 0 32px cyan
+    }
+
     .home-cv{
         position: relative;
         top: 270px;
@@ -953,6 +1036,12 @@ header {
 .slide-content{
     margin: 0 40px;
 }
+
+/*----====Projects List====----*/
+/*----====Projects List====----*/
+/*----====Projects List====----*/
+/*----====Projects List====----*/
+
 
 
 }
