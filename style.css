@@ -849,25 +849,39 @@
     /*----======MEDIA TABLET======---- */
 
 
-    @media (min-width : 481px) and (max-width : 640px) {
+    @media (min-width : 768px) and (max-width : 1024px) {
+        header {
+            position: fixed;
+            top: 0;
+            width: 170%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: black;
+        }
+
         .home {
             position: relative;
-            width: 600px;
+            width: 95%;
             justify-content: space-between;
-            height: 100vh;
+            height: 50vh;
             display: flex;
             align-items: center;
             padding: 100px 10% 0;
-            left: -20px;
         }
+    
         .home-content span{
-            left: 20px;
+            color: #0ef;
+            font-size: 30px;
         }
-        
+    
         .home-content h1{
-            left:20px;
+            font-size: 40px
         }
-
+    
         .icons{
             display: block;
         }
@@ -886,7 +900,7 @@
 
         .navbar{
             position: absolute;
-            width: 65%;
+            width: 75vh;
             height: 0;
             top: 100%;
             left: 0;
@@ -908,22 +922,23 @@
             margin: 0.7rem;
         }
 
-        .pic{
-            left: -90;
-            bottom: -120;
-            max-height:50px ;
-            position: relative;
-            right: 80;
+            
+        .pic {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            float: right;
+            position: absolute;
+            bottom: 50%;
+            left: 60%;
         }
 
-
         .picture{
-            height: 180px;
-            width: 180px;
+            height: 250px;
+            width: 250px;
             box-shadow: 0 0 2px cyan,
             0 0 1px cyan,
             0 0 20px cyan;
-            margin-top: 40px;
             position: absolute;
             left: 10;
         }
@@ -935,7 +950,7 @@
 
         .home-sci{
             position: relative;
-            top : 270px;
+            top : 50px;
         }
 
         .btn-box{
@@ -952,13 +967,14 @@
 
         .home-cv{
             position: relative;
-            top: 270px;
+            top: 50px;
             left: 180px;
         }
         
         .slide-content{
             margin: 0px 70px;
         }
+        
 
     /*----=======POPUP TABLET======------ */
     /*----=======POPUP TABLET======------ */
@@ -976,6 +992,7 @@
         z-index: 998; /* Ensure the overlay is behind the panel (z-index: 999) but above the rest of the content */
         backdrop-filter: blur(10px); /* Add the backdrop-filter property for blur effect */
         overflow: hidden;
+        text-align: center;
     }
 
     .panel{
@@ -983,14 +1000,15 @@
         flex-direction: column;
         position: relative;
         align-items: center;
-        max-width: 300px;
-        width: 300px;
+        max-width: 100vh;
+        width: 50vh;
         padding: 30px 20px;
         border-radius: 24px;
         border:2px solid cyan;
         z-index: 999;
         right: 0;
-        left: 10;
+        top: 100;
+        left: 40;
         bottom: 40;
         backdrop-filter: blur(50px);
         animation: slideBottom .8s ease forwards;
@@ -1030,12 +1048,12 @@
 
     .contact-mid-title hr{
         border: none;
-        width: 120px;
+        width: 200px;
         height: 5px;
         background-color: cyan ;
         border-radius: 10px;
         margin-bottom: 20px;
-        margin-left: 27%;
+        margin-left: 20px;
 
     }
 
@@ -1087,16 +1105,13 @@
         text-transform: uppercase;
         color: white;
         text-align: center;
-        margin: 50px;
-        padding-top: 50px;
-        margin-right: 100px;
         border-bottom: 1.5px solid #fff;
+        align-items: center;
     }
     .slide-container{
-        max-width: 300px;
+        max-width: 450px;
         width:100%;
         padding: 40px;
-        margin-right: 85px ;
     }
 
     .slide-content{
@@ -1109,5 +1124,68 @@
     /*----====Projects List====----*/
 
 
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-list {
+        font-size: 28px;
+        text-transform: uppercase;
+        color: white;
+        margin: 50px;
+        padding-top: 100px;
+        border-bottom: 1.5px solid #fff;
+    }
+
+    .projects-container{
+        margin-bottom: 200px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 2px;
+
+    }
+
+    .projects-container a {
+        text-decoration: none;
+    }
+
+    .projects-box{
+        border-bottom: 1px solid white;
+        padding: 20px;
+    }
+    .projects-box1{
+        border-bottom: 1px solid white;
+        padding: 20px;
+    }
+    .projects-box2{
+        padding: 20px;
+    }
+
+    .title{
+    border: 1px solid cyan;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    font-weight: normal;
+    border-radius: 5px;
+    background: #0ef;
+    color: black;
+    }
+
+    .title:hover{
+        background: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .list{
+        margin-top: 50px;
+        width: 60vh;
+        border: 1px solid white;
+    }
 
     }
