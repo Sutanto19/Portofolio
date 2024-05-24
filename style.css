@@ -849,7 +849,7 @@
     /*----======MEDIA TABLET======---- */
 
 
-    @media (min-width : 768px) and (max-width : 1024px) {
+    @media (min-width : 768px) and (max-width : 1024px) {   
         header {
             position: fixed;
             top: 0;
@@ -1154,6 +1154,7 @@
 
     .projects-box{
         border-bottom: 1px solid white;
+        border-top: 1px solid white;
         padding: 20px;
     }
     .projects-box1{
