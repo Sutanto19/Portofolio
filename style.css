@@ -448,6 +448,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        animation: slideBottom .5s ease forwards;
     }
     .projects-list {
         font-size: 28px;
@@ -1162,6 +1163,10 @@
         padding: 20px;
     }
     .projects-box2{
+        border-bottom: 1px solid white;
+        padding: 20px;
+    }
+    .projects-box3{
         padding: 20px;
     }
 
